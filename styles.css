@@ -26,7 +26,7 @@ body, input{
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+    background-image: linear-gradient(-45deg, #00B4C9 0%, #00B4C9 100%);
     transition: 1.8s ease-in-out;
     border-radius: 50%;
     z-index: 6;
@@ -118,7 +118,7 @@ form.signup-form{
 
 .btn {
     width: 150px;
-    background-color: #5995fd;
+    background-color: #00B4C9;
     border: none;
     outline: none;
     height: 49px;
@@ -132,7 +132,7 @@ form.signup-form{
   }
 
 .btn:hover {
-    background-color: #4d84e2;
+    background-color: #42a6b1;
 } 
 .btn.transparent {
     margin: 0;
@@ -170,8 +170,8 @@ form.signup-form{
 }
 
 .social-icon:hover {
-    color: #4481eb;
-    border-color: #4481eb;
+    color: #00B4C9;
+    border-color: #00B4C9;
 }
 
 .panels-container {
@@ -192,7 +192,7 @@ form.signup-form{
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+    background-image: linear-gradient(-45deg, #00B4C9 0%, #00B4C9 100%);
     transition: 1.8s ease-in-out;
     border-radius: 50%;
     z-index: 6;
@@ -271,15 +271,15 @@ form.signup-form{
 .container.sign-up-mode .signin-signup {
     left: 25%;  
 }
-
-.container.sign-up-mode form.sign-up-form {
-    opacity: 1;
-    z-index: 2;
-}
-
-.container.sign-up-mode form.sign-in-form {
-    opacity: 0;
+.container.sign-up-mode form.signin-form {
     z-index: 1;
+    opacity: 0;
+    
+}
+.container.sign-up-mode form.signup-form {
+    z-index: 2;
+    opacity: 1;
+    
 }
 
 .container.sign-up-mode .right-panel .image,
@@ -398,27 +398,27 @@ form.signup-form{
     }
   }
   @media (max-width: 570px) {
-    form {
-      padding: 0 1.5rem;
-    }
-  
-    .image {
-      display: none;
-    }
-    .panel .content {
-      padding: 0.5rem 1rem;
-    }
-    .container {
-      padding: 1.5rem;
-    }
-  
-    .container:before {
-      bottom: 72%;
-      left: 50%;
-    }
-  
-    .container.sign-up-mode:before {
-      bottom: 28%;
-      left: 50%;
-    }
+  form {
+    padding: 0 1.5rem;
   }
+
+  .image {
+    display: none;
+  }
+  .panel .content {
+    padding: 0.5rem 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+
+  .container:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .container.sign-up-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+}
